@@ -1,0 +1,26 @@
+body{
+    background-color:  #6B6967;
+    text-align: center;
+}
+#wrapper{
+    min-height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    background-color: #686A6C;
+}
+
+nav{
+    display: inline;
+    display: block;
+    width: 100%;
+}
+li{
+    display: block;
+    background-color: aqua;
+    margin: 2px;
+    padding: 2px;
+}
+.main-link{
+    
+}
