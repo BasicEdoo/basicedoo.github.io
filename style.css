@@ -1,0 +1,79 @@
+/* Add a dark mode toggle */
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #fff;
+    }
+    a {
+      color: #fff;
+    }
+    .button {
+      background-color: #fff;
+      color: #333;
+    }
+  }
+  
+  /* Use a responsive grid layout for the pricing table */
+  table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  /* Add hover effects to the buttons */
+  .button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Use smooth transitions for the navigation menu */
+  header ul {
+    display: flex;
+    list-style: none;
+  }
+  header ul li a {
+    transition: all 0.2s ease;
+  }
+  header ul li a:hover {
+    color: #333;
+  }
+  
+  /* Add a parallax effect to the hero section */
+  #hero {
+    background-image: url('hero-image.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  #hero h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  #hero p {
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Use media queries to make the layout responsive */
+  @media (max-width: 768px) {
+    header ul {
+      flex-direction: column;
+    }
+    #hero {
+      height: 300px;
+    }
+    #hero h1 {
+      font-size: 2em;
+    }
+    #hero p {
+      font-size: 1.2em;
+    }
+  }
