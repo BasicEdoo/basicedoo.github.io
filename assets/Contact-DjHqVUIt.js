@@ -1,0 +1,1 @@
+import{w as o}from"./with-props-cpQhAA0q.js";import{l as t}from"./chunk-KNED5TY2-f-9SQvTI.js";function n(){return t.jsxs("section",{id:"contact",children:[t.jsx("h2",{children:"Contact Me"}),t.jsx("p",{children:"Provide your contact information or a contact form here."})]})}const e=o(n);export{e as default};

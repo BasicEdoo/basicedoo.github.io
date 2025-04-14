@@ -1,0 +1,1 @@
+import{w as o}from"./with-props-cpQhAA0q.js";import{l as s}from"./chunk-KNED5TY2-f-9SQvTI.js";function e(){return s.jsxs("section",{id:"projects",children:[s.jsx("h2",{children:"My Projects"}),s.jsx("p",{children:"Showcase your projects here. You can add details, links, and images."})]})}const n=o(e);export{n as default};

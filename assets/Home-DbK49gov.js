@@ -1,0 +1,1 @@
+import{w as e}from"./with-props-cpQhAA0q.js";import{l as o}from"./chunk-KNED5TY2-f-9SQvTI.js";function t(){return o.jsxs("section",{id:"about",children:[o.jsx("h2",{children:"About Me"}),o.jsx("p",{children:"Welcome to my portfolio! Write something about yourself here."})]})}const i=e(t);export{i as default};
