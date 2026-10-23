@@ -85,12 +85,12 @@ function App() {
               <p className="eyebrow">Selected projects</p>
               <h2 id="projects-heading">A few things I’ve been building.</h2>
             </div>
-            <p className="projects-intro">Snapshots from the work. Open an image for a closer look.</p>
+            <p className="projects-intro">A look at the work. Open an image for a closer look.</p>
           </div>
           <div className="project-grid">
             {projects.map((project) => (
               <article className="project-card" key={project.name}>
-                <a className="project-image" href={project.image} target="_blank" rel="noopener noreferrer" aria-label={`Open ${project.name} snapshot in a new tab`}>
+                <a className={`project-image${project.imageKind === 'artwork' ? ' project-artwork' : ''}`} href={project.image} target="_blank" rel="noopener noreferrer" aria-label={`Open ${project.name} ${project.imageKind ?? 'snapshot'} in a new tab`}>
                   <img src={project.image} alt={project.alt} width={project.width} height={project.height} loading="lazy" />
                 </a>
                 <div className="project-caption">
@@ -98,8 +98,9 @@ function App() {
                   <h3>{project.name}</h3>
                   <p className="project-description">{project.description}</p>
                   <div className="project-actions">
-                    <a className="project-open" href={project.image} target="_blank" rel="noopener noreferrer">View snapshot<span className="sr-only"> of {project.name} — opens in a new tab</span><span className="destination-note" aria-hidden="true">New tab</span></a>
+                    <a className="project-open" href={project.image} target="_blank" rel="noopener noreferrer">View {project.imageKind ?? 'snapshot'}<span className="sr-only"> of {project.name} — opens in a new tab</span><span className="destination-note" aria-hidden="true">New tab</span></a>
                     {project.website && <a className="project-open" href={project.website} target="_blank" rel="noopener noreferrer">{project.websiteLabel}<span className="sr-only"> — opens in a new tab</span><span className="destination-note" aria-hidden="true">New tab</span></a>}
+                    {project.source && <a className="project-open" href={project.source} target="_blank" rel="noopener noreferrer">GitHub<span className="sr-only"> source for {project.name} — opens in a new tab</span><span className="destination-note" aria-hidden="true">New tab</span></a>}
                   </div>
                 </div>
               </article>

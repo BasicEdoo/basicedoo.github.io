@@ -19,4 +19,17 @@ export const projects = [
     width: 1280,
     height: 950,
   },
+  {
+    name: 'HCVoice',
+    category: 'WoW Classic addon',
+    description: 'Making the small moments in Classic WoW feel more alive. Contextual greetings, thanks and danger calls use the game’s own voices and emotes to give your character more personality.',
+    image: '/images/projects/hcvoice.png',
+    imageKind: 'artwork',
+    alt: 'HCVoice logo: a golden speech bubble and sound bars on dark stone.',
+    width: 1254,
+    height: 1254,
+    website: 'https://www.curseforge.com/wow/addons/hcvoice',
+    websiteLabel: 'CurseForge',
+    source: 'https://github.com/BasicEdoo/HCVoice',
+  },
 ]
